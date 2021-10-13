@@ -1,12 +1,10 @@
 [Unit]
-Description=Verklikker
+Description = Verklikker Service
 After=rabbitmq-server.service
-StartLimitIntervalSec=0[Service]
-Type=simple
-Restart=always
-RestartSec=1
+
+[Service]
 User=ubuntu
-ExecStart=python3 /home/ubuntu/verklikker/master.py
+ExecStart=python3 /home/ubuntu/verklikker/main.py
 
 [Install]
-WantedBy=multi-user.target
+WantedBy = multi-user.target
