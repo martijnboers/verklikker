@@ -1,0 +1,4 @@
+pika~=1.2.0
+telegram-send
+requests
+pytz~=2021.3
